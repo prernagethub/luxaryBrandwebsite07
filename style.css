@@ -1,0 +1,447 @@
+ @font-face {
+   font-family: A;
+   src: url(images/Monstellar-GOeey.otf);
+ }
+
+ @font-face {
+   font-family: B;
+   src: url(images/Jonathan\ Ball\ -\ Acre-Medium.otf);
+ }
+
+ @font-face {
+   font-family: C;
+   src: url(images/Gerbera-Medium.otf);
+ }
+
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ html {
+   height: 100%;
+   width: 100%;
+   scroll-behavior: smooth;
+ }
+
+ body {
+
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+ }
+
+ nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 25%;
+   height: 8vh;
+   width: 100%;
+   background-color: white;
+   /* z-index: 9; */
+   position: fixed;
+   top: 0;
+   z-index: 9;
+ }
+
+ a {
+   text-decoration: none;
+   color: black;
+ }
+
+ .logo {
+   font-family: A;
+   letter-spacing: 10px;
+
+ }
+
+ .logo h1 {
+   background-color: white;
+ }
+
+ .right {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20%;
+   background-color: white;
+
+ }
+
+ .right a {
+   font-size: 1.1rem;
+   font-weight: 500;
+   font-family: C;
+   background-color: white;
+
+ }
+
+ .left {
+   font-size: 1.1rem;
+   font-weight: 500;
+   font-family: C;
+ }
+
+ .left a {
+   color: black;
+   background-color: white;
+ }
+
+ .hero {
+   height: 90vh;
+   width: 100%;
+   /* border: 3px solid black; */
+ }
+
+ img {
+   height: 90vh;
+   width: 100%;
+   object-fit: cover;
+ }
+
+ .new_in {
+   position: absolute;
+   bottom: 15%;
+   left: 40%;
+   text-align: center;
+   color: white;
+
+   /* display: flex;
+   flex-direction: column;
+   gap: 10%; */
+ }
+
+ .new_in h1 {
+   font-family: B;
+
+ }
+
+ .new_in button {
+   padding: 15px 30px;
+   margin-left: 10px;
+   margin-top: 7%;
+   font-weight: 400;
+   font-family: C;
+   transition: 0.3s;
+   border: none;
+   border-radius: 2%;
+ }
+
+ .new_in button:hover {
+   transform: scale(0.9);
+ }
+
+ .body-2 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10%;
+   height: 80vh;
+   text-transform: uppercase;
+   font-size: 2.5rem;
+
+ }
+
+
+ .grid_box {
+   display: grid;
+   grid-template-columns: repeat(4, 300px);
+   /* border: 2px solid black; */
+   gap: 3%;
+   justify-content: center;
+   align-items: center;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+   /* width: 100%; */
+ }
+
+ .grid_box div {
+   height: 50vh;
+   transition: 0.8s;
+ }
+
+ .grid_box div:hover {
+   transform: scale(0.9);
+ }
+
+
+ @keyframes appear {
+   from {
+     opacity: 0;
+     transform: translateX(-100px);
+   }
+
+   to {
+     opacity: 1;
+     scale: 1;
+     transform: translateX(0px);
+   }
+ }
+
+ .grid1 {
+   background-image: url(images/Screenshot\ 2025-01-09\ 202730.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .grid2 {
+   background-image: url(images/Screenshot\ 2025-01-09\ 202754.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .grid3 {
+   background-image: url(images/Screenshot\ 2025-01-09\ 202807.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .grid4 {
+   background-image: url(images/Screenshot\ 2025-01-09\ 202827.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ /* .grid1,
+ .grid2,
+ .grid3,
+ .grid4 {} */
+
+ h6 {
+   text-align: center;
+   font-size: 0.8rem;
+   font-family: B;
+   letter-spacing: 2px;
+   text-transform: capitalize;
+   color: rgb(77, 75, 75);
+ }
+
+ .body-3 {
+   background-image: url(https://media.gucci.com/content/DiaryArticleDouble_Standard_2800x1788/1727279107/DiaryArticleDouble_Gucci-Blondie-Sept24-B0003182-v5-online_001_Default.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   /* justify-content: center; */
+   /* width: 100%; */
+   color: white;
+   text-align: center;
+   gap: 40%;
+   margin: 0 20px;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+ }
+
+ .body-3 h1 {
+   color: white;
+   margin-top: 3%;
+   font-family: B;
+   text-align: center;
+   filter: blur(0.8px);
+   /* border: 1px solid white; */
+   font-size: 1rem;
+   padding: 4px;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+ }
+
+ .body-3 p {
+   font-size: 2rem;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+ }
+
+ .body-3 button {
+   color: white;
+   border: 1px solid white;
+   background-color: transparent;
+   padding: 20px 40px;
+   text-transform: uppercase;
+   margin-top: 5%;
+   border-radius: 2%;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+ }
+
+ .body-3 button:hover{
+  transform: scale(0.9);
+ }
+
+ .middle {
+   text-align: center;
+   margin: 100px 0;
+   font-weight: 500;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+ }
+
+ .body-4 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10%;
+   text-align: center;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+ }
+
+ .body-4 .img_div {
+   background-image: url(images/Screenshot\ 2025-01-09\ 205212.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   width: 40%;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+ }
+
+ .right_content>h1 {
+   font-family: B;
+   margin-bottom: 6%;
+   font-weight: 100;
+   text-transform: uppercase;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+   /* background-color: aqua; */
+ }
+
+ .body-4 p {
+   margin-bottom: 10%;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+ }
+
+ .body-4 button {
+   border: none;
+   background-color: white;
+   height: 4vh;
+   width: 30%;
+   text-transform: uppercase;
+   font-family: B;
+   font-weight: 500;
+   transition: 0.2s;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+ }
+
+ /* .body-4 button::after{
+  transition: transform ease .5s;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(128, 26, 0);
+  left: 0;
+  top: 90%;
+  transform: scaleX(0);
+} */
+
+ .body-4 button:hover {
+   /* transform: scaleX(1); */
+   border-bottom: 2px solid black;
+   /* transform-origin: left; */
+
+ }
+
+ .body-5 {
+   text-align: center;
+   margin-top: 10%;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: 0% cover 40%;
+ }
+
+ .body-5>h1 {
+   font-family: b;
+   font-size: 1rem;
+   letter-spacing: 1px;
+   font-weight: 900;
+ }
+
+ .body-5 p {
+   font-size: 3rem;
+   font-weight: 100;
+   margin-top: 1%;
+ }
+
+ .body-5 h1 {
+   margin-top: 3%;
+   font-weight: 100;
+ }
+
+ footer {
+   background-color: black;
+   color: white;
+   margin-top: 5%;
+   text-align: center;
+ }
+
+ .Footer_heading {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8%;
+ }
+
+ .Footer_heading h1 {
+   font-size: 0.7rem;
+   color: grey;
+   text-transform: uppercase;
+   font-family: B;
+   margin-top: 4%;
+ }
+
+ .footer_details {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5%;
+   margin-top: 2%;
+   margin-left: 4%;
+   /* list-style: none; */
+
+ }
+
+ .footer_details>ul {
+   list-style: none;
+   line-height: 39px;
+ }
+
+ .footer_details div>a {
+   color: white;
+ }
+
+ footer p {
+   margin: 3% 0;
+ }
+
+ footer h1 {
+   font-size: 13rem;
+   font-family: A;
+   font-weight: 100;
+   letter-spacing: 3px;
+ }
