@@ -1,4 +1,4 @@
- @font-face {
+@font-face {
    font-family: A;
    src: url(images/Monstellar-GOeey.otf);
  }
@@ -240,7 +240,7 @@
    color: white;
    text-align: center;
    gap: 40%;
-   margin: 0 20px;
+   margin: 30px 20px;
    animation: appear linear;
    animation-timeline: view();
    animation-range: 0% cover 40%;
@@ -278,6 +278,7 @@
    animation: appear linear;
    animation-timeline: view();
    animation-range: 0% cover 40%;
+   transition: 0.3s;
  }
 
  .body-3 button:hover{
@@ -447,3 +448,162 @@
    font-weight: 100;
    letter-spacing: 3px;
  }
+
+ /* Responsive Styles */
+
+/* Large screens (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .hero img {
+    height: 90vh;
+  }
+
+  .body-4 {
+    flex-direction: row;
+    gap: 10%;
+  }
+  .body-4 .img_div {
+    width: 40%;
+    height: 100vh;
+  }
+  footer h1 {
+    font-size: 13rem;
+  }
+}
+
+/* Medium screens (tablets, 768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  nav {
+    gap: 10%;
+    height: 10vh;
+  }
+  .grid_box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+  }
+  .grid_box div {
+    height: 35vh;
+  }
+  .body-4 {
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .body-4 .img_div {
+    width: 80vw;
+    height: 40vh;
+  }
+  .Footer_heading {
+    gap: 3%;
+    flex-direction: column;
+  }
+  .footer_details {
+    flex-direction: column;
+    gap: 2vh;
+    margin-left: 0;
+  }
+  footer h1 {
+    font-size: 5rem;
+  }
+  .new_in {
+    left: 25%;
+  }
+}
+
+/* Small screens (phones, less than 768px) */
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px 0;
+    position: static;
+  }
+  .right {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .logo h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+  .hero {
+    height: 40vh;
+  }
+  .hero img {
+    height: 35vh;
+  }
+  .new_in {
+    position: static;
+    left: 0;
+    margin: 20px 0;
+  }
+  .new_in h1 {
+    font-size: 1.2rem;
+  }
+  .new_in button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  .body-2 {
+    font-size: 1.2rem;
+    height: auto;
+    gap: 20px;
+  }
+  .grid_box {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .grid_box div {
+    height: 25vh;
+  }
+  .body-3 {
+    height: 40vh;
+    margin: 10px 0;
+    gap: 10px;
+  }
+  .body-3 h1 {
+    font-size: 1rem;
+  }
+  .body-3 p {
+    font-size: 1rem;
+  }
+  .body-3 button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .middle {
+    margin: 30px 0;
+    font-size: 1rem;
+  }
+  .body-4 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .body-4 .img_div {
+    width: 100vw;
+    height: 25vh;
+  }
+  .right_content > h1 {
+    font-size: 1.2rem;
+  }
+  .body-4 button {
+    width: 80%;
+    height: 5vh;
+    font-size: 1rem;
+  }
+  .body-5 p {
+    font-size: 1.2rem;
+  }
+  .Footer_heading {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer_details {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+  footer h1 {
+    font-size: 2rem;
+  }
+}
